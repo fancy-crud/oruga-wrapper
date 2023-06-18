@@ -5,3 +5,6 @@ export const table = ReturnObject({
   body: TableBody,
 })
 
+export {
+  TableBody,
+}
