@@ -2,7 +2,7 @@
 import { OButton, OField, OIcon, OUpload } from '@oruga-ui/oruga-next'
 import type { NormalizedFileField } from '@fancy-crud/core'
 import type { PropType } from 'vue'
-import { useFileField } from '@/forms/integration'
+import { useFileField } from '@fancy-crud/vue'
 
 export default defineComponent({
   props: {

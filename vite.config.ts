@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import { dependencies, name } from './package.json'
+import { name } from './package.json'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,9 +16,11 @@ export default defineConfig({
     lib: {
       name,
       entry: path.resolve(__dirname, 'src/index.ts'),
+      formats: ['es', 'cjs'],
+      fileName: format => `fancy-crud-oruga-wrapper.${format}.js`,
     },
     rollupOptions: {
-      external: [...Object.keys(dependencies)],
+      external: ['vue', '@oruga-ui/oruga-next', '@fancy-crud/core', '@fancy-crud/vue'],
       output: {
         globals: {
           vue: 'Vue',

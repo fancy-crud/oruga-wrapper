@@ -2,7 +2,7 @@
 import { OField, OSelect } from '@oruga-ui/oruga-next'
 import type { NormalizedSelectField } from '@fancy-crud/core'
 import type { PropType } from 'vue'
-import { useSelectField } from '@/forms/integration'
+import { useSelectField } from '@fancy-crud/vue'
 
 export default defineComponent({
   props: {

@@ -1,13 +1,15 @@
 import { createApp } from 'vue'
 import type { ZodAny } from 'zod'
 import axios from 'axios'
-// import '@oruga-ui/oruga-next/dist/oruga-full.css'
+import '@oruga-ui/oruga-next/dist/oruga-full.css'
 import Oruga from '@oruga-ui/oruga-next'
-import FancyCrud from '../src/index'
+import { FancyCrud } from '@fancy-crud/vue'
+
 import { defaultClasses, fields, orugaFlowbite, table, utils } from '../src/wrappers'
 import App from './App.vue'
 
 import '@mdi/font/css/materialdesignicons.css'
+import '@fancy-crud/vue/dist/fancy-crud-vue.css'
 import './styles/main.sass'
 
 axios.defaults.baseURL = 'http://localhost:9000/api/'

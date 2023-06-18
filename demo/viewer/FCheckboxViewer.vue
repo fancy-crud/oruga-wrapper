@@ -7,6 +7,8 @@
 </template>
 
 <script lang='ts' setup>
+import { useForm } from '@fancy-crud/vue'
+
 const options = [
   'Option 1',
   'Option 2',

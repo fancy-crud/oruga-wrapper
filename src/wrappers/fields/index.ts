@@ -1,4 +1,4 @@
-import { ReturnObject } from '../common'
+import { ReturnObject } from '@fancy-crud/vue'
 import Text from './Text.vue'
 import Color from './Color.vue'
 import Password from './Password.vue'
@@ -18,3 +18,14 @@ export const fields = ReturnObject({
   file: File,
   datepicker: Datepicker,
 })
+
+export {
+  Text,
+  Color,
+  Password,
+  Select,
+  Radio,
+  Checkbox,
+  File,
+  Datepicker,
+}

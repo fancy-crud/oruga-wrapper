@@ -7,6 +7,8 @@
 </template>
 
 <script lang='ts' setup>
+import { useForm } from '@fancy-crud/vue'
+
 const form = useForm({
   id: 'color-field',
   fields: {

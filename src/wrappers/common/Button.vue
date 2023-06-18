@@ -17,9 +17,18 @@ export default defineComponent({
       return 'mdi'
     })
 
+    const defaultSlot = computed(() => {
+      if (props.isLoading) {
+        return {
+          default: () => h(LoadingIcon, { isLoading: props.isLoading }),
+        }
+      }
+      return {}
+    })
+
     return () =>
       h(OButton, { ...attrs, pack, iconRight: props.icon, inverted: props.borderless }, {
-        default: () => h(LoadingIcon, { isLoading: props.isLoading }),
+        ...defaultSlot.value,
         ...slots,
       })
   },

@@ -1,8 +1,9 @@
 <script lang="ts">
-import { OField, OInput } from '@oruga-ui/oruga-next'
 import type { NormalizedColorField } from '@fancy-crud/core'
 import type { PropType } from 'vue'
-import { useColorField } from '@/forms/integration'
+import { OField, OInput } from '@oruga-ui/oruga-next'
+import { useColorField } from '@fancy-crud/vue'
+
 export default defineComponent({
   props: {
     formId: {

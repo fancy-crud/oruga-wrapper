@@ -14,7 +14,7 @@
 import _ from 'lodash'
 import { OCheckbox } from '@oruga-ui/oruga-next'
 import type { NormalizedCheckboxField } from '@fancy-crud/core'
-import { useCheckboxField } from '@/forms/integration'
+import { useCheckboxField } from '@fancy-crud/vue'
 
 const props = defineProps<{
   formId: symbol

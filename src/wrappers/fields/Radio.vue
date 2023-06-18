@@ -3,7 +3,7 @@ import _ from 'lodash'
 import { OField, ORadio } from '@oruga-ui/oruga-next'
 import type { NormalizedRadioField } from '@fancy-crud/core'
 import type { PropType } from 'vue'
-import { useRadioField } from '@/forms/integration'
+import { useRadioField } from '@fancy-crud/vue'
 
 export default defineComponent({
   props: {

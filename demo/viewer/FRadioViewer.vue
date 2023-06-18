@@ -7,7 +7,7 @@
 </template>
 
 <script lang='ts' setup>
-import { useForm } from '@/forms/integration/composables'
+import { useForm } from '@fancy-crud/vue'
 
 const form = useForm({
   id: 'radio-field',

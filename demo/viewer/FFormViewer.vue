@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang='ts'>
-import { useForm } from '@/forms/integration/composables'
+import { useForm } from '@fancy-crud/vue'
 
 const form = useForm({
   id: 'select-field',

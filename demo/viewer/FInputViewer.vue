@@ -1,6 +1,7 @@
 <template>
-  <f-form v-bind="form" disable-notifications />
+  <input v-model="form.fields.name.modelValue" type="text">
 
+  <f-form v-bind="form" />
   <p class="py-8">
     {{ form.fields.name.modelValue }}
   </p>
@@ -16,10 +17,30 @@
 
 <script lang='ts' setup>
 import { z } from 'zod'
-import { FieldType } from '@fancy-crud/core'
+import { FieldType, useForm } from '@fancy-crud/vue'
 // import { NotificationType, useForm } from '@/forms/integration'
 
 // const { rules } = useRules()
+// setFancyCrudConfig({
+//   http: {
+//     service: axios,
+//   },
+//   fields,
+//   utils,
+//   table,
+//   defaultClasses,
+//   ruleOptions: {
+//     processResult: (raw: { value: unknown; rule: ZodAny }) => {
+//       const { value, rule } = raw
+//       const result = rule.safeParse(value)
+
+//       if (result.success)
+//         return result.success
+
+//       return result.error.issues[0].message
+//     },
+//   },
+// })
 
 const settings = {
   url: 'artists/',
@@ -33,20 +54,23 @@ const form = useForm({
       placeholder: 'Como asi pues?',
       rules: (value: string) => ({ value, rule: z.string().min(1).max(5) }),
       wrapper: {
-        class: 'col-span-10',
+        class: 'col-span-6',
       },
     },
-    // gender: {
-    //   type: FieldType.select,
-    //   label: 'Last name',
-    //   class: 'w-full',
-    //   optionLabel: 'label',
-    //   optionValue: 'value',
-    //   options: [
-    //     { label: 'Male', value: 'm' },
-    //     { label: 'Female', value: 'f' },
-    //   ],
-    // },
+    gender: {
+      type: FieldType.select,
+      label: 'Last name',
+      class: 'w-full',
+      optionLabel: 'label',
+      optionValue: 'value',
+      options: [
+        { label: 'Male', value: 'm' },
+        { label: 'Female', value: 'f' },
+      ],
+      wrapper: {
+        class: 'col-span-6',
+      },
+    },
   },
   settings,
 })

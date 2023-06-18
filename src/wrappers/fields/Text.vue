@@ -1,8 +1,9 @@
 <script lang="ts">
 import { OField, OInput } from '@oruga-ui/oruga-next'
-import type { NormalizedTextField } from '@fancy-crud/core'
+import type { NormalizedTextField } from '@fancy-crud/vue'
 import type { PropType } from 'vue'
-import { useTextField } from '@/forms/integration'
+import { useTextField } from '@fancy-crud/vue'
+
 export default defineComponent({
   props: {
     formId: {

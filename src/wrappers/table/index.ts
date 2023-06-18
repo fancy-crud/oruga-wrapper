@@ -1,4 +1,4 @@
-import { ReturnObject } from '../common'
+import { ReturnObject } from '@fancy-crud/vue'
 import TableBody from './TableBody.vue'
 
 export const table = ReturnObject({

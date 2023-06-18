@@ -27,7 +27,7 @@
 <script lang="ts" setup>
 import { OTable, OTableColumn } from '@oruga-ui/oruga-next'
 import type { NormalizedColumn } from '@fancy-crud/core'
-import { useColumnValue } from '@/tables/integration'
+import { useColumnValue } from '@fancy-crud/vue'
 
 const props = defineProps<{
   items: any[]
