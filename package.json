@@ -35,7 +35,7 @@
   },
   "peerDependencies": {
     "@fancy-crud/core": "^1.4.0",
-    "@fancy-crud/vue": "^1.0.0",
+    "@fancy-crud/vue": "^1.5.2",
     "@oruga-ui/oruga-next": "^0.6.0",
     "@vueuse/core": "^9.9.0",
     "esno": "0.10.0",
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@fancy-crud/core": "^1.4.0",
-    "@fancy-crud/vue": "^1.0.0",
+    "@fancy-crud/vue": "^1.5.2",
     "@oruga-ui/oruga-next": "^0.6.0",
     "@vueuse/core": "^9.9.0",
     "esno": "0.10.0",

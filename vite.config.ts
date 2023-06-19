@@ -22,6 +22,12 @@ export default defineConfig({
     rollupOptions: {
       external: ['vue', '@oruga-ui/oruga-next', '@fancy-crud/core', '@fancy-crud/vue'],
       output: {
+        assetFileNames: (assetInfo) => {
+          if (!assetInfo.name || assetInfo.name === 'style.css')
+            return 'fancy-crud-oruga-wrapper.css'
+          return assetInfo.name
+        },
+        exports: 'named',
         globals: {
           vue: 'Vue',
         },

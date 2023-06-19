@@ -7,7 +7,7 @@ import Oruga from '@oruga-ui/oruga-next'
 import { defaultCustomization, fields, table, utils } from '../src'
 import App from './App.vue'
 
-import '../src/styles/index.sass'
+import './styles/main.sass'
 
 axios.defaults.baseURL = 'http://localhost:9000/api/'
 
