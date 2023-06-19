@@ -1,18 +1,18 @@
-const colors = require('tailwindcss/colors')
+import { blue, gray, red } from 'tailwindcss/colors'
 
-module.exports = {
-  content: [
-    './index.html',
-    './src/**/*.{vue,js,ts,jsx,tsx}',
-    './demo/**/*.{vue,js,ts,jsx,tsx}',
-  ],
-  theme: {
-    extend: {},
+export const content = [
+  './demo/**/*.{vue,js,ts,jsx,tsx}',
+  './index.html',
+  './src/**/*.{vue,js,ts,jsx,tsx}',
+  'node_modules/@fancy-crud/vue/*.{js,css}',
+]
+export const theme = {
+  extend: {
     colors: {
-      primary: colors.blue,
-      danger: colors.red,
+      primary: blue,
+      danger: red,
+      inactive: gray,
     },
   },
-  plugins: [
-  ],
 }
+export const plugins = []

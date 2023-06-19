@@ -5,7 +5,7 @@ import LoadingIcon from './LoadingIcon.vue'
 export default defineComponent({
   props: {
     icon: { type: String, default: () => '' },
-    borderless: { type: String, default: () => '' },
+    borderless: { type: Boolean, default: () => false },
     isLoading: { type: Boolean, default: () => false },
   },
 

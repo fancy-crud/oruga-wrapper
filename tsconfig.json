@@ -30,7 +30,7 @@
     }
   },
   "exclude": [
-    // "demo",
+    "demo",
     "dist",
     "node_modules",
     "cypress",

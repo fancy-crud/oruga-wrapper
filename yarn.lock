@@ -130,10 +130,10 @@
   "resolved" "https://registry.npmjs.org/@eslint/js/-/js-8.42.0.tgz"
   "version" "8.42.0"
 
-"@fancy-crud/core@^1.0.0":
-  "integrity" "sha512-DasQ+VUjzT799H3SddcF+JnJqr5bb/U6G047yO08CywbnpFCwUp6jkDx7L1UVLq3HG82dm5yesZaLgqAuiSEYQ=="
-  "resolved" "https://registry.npmjs.org/@fancy-crud/core/-/core-1.3.0.tgz"
-  "version" "1.3.0"
+"@fancy-crud/core@^1.4.0":
+  "integrity" "sha512-lfn5sKRaX88sQGQ/Jk9BHKTObqwM8sbzMMRDmMBiDbQFkzJAkU0WsLel+PqfZLSr2eq+CDdA00lLYfevFkqPdg=="
+  "resolved" "https://registry.npmjs.org/@fancy-crud/core/-/core-1.4.0.tgz"
+  "version" "1.4.0"
   dependencies:
     "esno" "0.10.0"
     "lodash" "^4.17.21"

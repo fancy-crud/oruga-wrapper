@@ -33,12 +33,14 @@ function getCheckboxAttributes(value: unknown) {
   if (props.field.multiple) {
     attributes = {
       nativeValue: value,
+      ...props.field,
     }
   }
   else {
     attributes = {
       trueValue: value,
       falseValue: null,
+      ...props.field,
     }
   }
 

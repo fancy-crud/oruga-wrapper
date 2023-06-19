@@ -15,6 +15,7 @@ const form = useForm({
     radio: {
       label: 'Radio',
       type: 'radio',
+      inRow: true,
       optionLabel: 'label',
       optionValue: 'value',
       options: [

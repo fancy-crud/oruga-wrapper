@@ -38,4 +38,6 @@ const form = useForm({
     url: 'artists/',
   },
 })
+
+console.log(form.fields.checkbox)
 </script>

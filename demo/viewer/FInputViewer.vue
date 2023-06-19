@@ -18,6 +18,7 @@
 <script lang='ts' setup>
 import { z } from 'zod'
 import { FieldType, useForm } from '@fancy-crud/vue'
+import { getDefaults } from '@fancy-crud/core'
 // import { NotificationType, useForm } from '@/forms/integration'
 
 // const { rules } = useRules()
@@ -74,5 +75,7 @@ const form = useForm({
   },
   settings,
 })
+
+console.log(form.buttons)
 </script>
 
