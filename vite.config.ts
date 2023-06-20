@@ -16,8 +16,7 @@ export default defineConfig({
     lib: {
       name,
       entry: path.resolve(__dirname, 'src/index.ts'),
-      formats: ['es', 'cjs'],
-      fileName: format => `fancy-crud-oruga-wrapper.${format}.js`,
+      fileName: 'fancy-crud-oruga-wrapper',
     },
     rollupOptions: {
       external: ['vue', '@oruga-ui/oruga-next', '@fancy-crud/core', '@fancy-crud/vue'],

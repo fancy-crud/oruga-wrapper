@@ -11,10 +11,10 @@
     "url": "https://github.com/fancy-crud/oruga-wrapper"
   },
   "main": "./dist/fancy-crud-oruga-wrapper.umd.js",
-  "module": "./dist/fancy-crud-oruga-wrapper.es.js",
+  "module": "./dist/fancy-crud-oruga-wrapper.mjs",
   "exports": {
     ".": {
-      "import": "./dist/fancy-crud-oruga-wrapper.es.js",
+      "import": "./dist/fancy-crud-oruga-wrapper.mjs",
       "require": "./dist/fancy-crud-oruga-wrapper.umd.js"
     },
     "./dist/fancy-crud-oruga-wrapper.css": {
@@ -35,7 +35,7 @@
   },
   "peerDependencies": {
     "@fancy-crud/core": "^1.4.0",
-    "@fancy-crud/vue": "^1.5.2",
+    "@fancy-crud/vue": "^1.5.3",
     "@oruga-ui/oruga-next": "^0.6.0",
     "@vueuse/core": "^9.9.0",
     "esno": "0.10.0",
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@fancy-crud/core": "^1.4.0",
-    "@fancy-crud/vue": "^1.5.2",
+    "@fancy-crud/vue": "^1.5.3",
     "@oruga-ui/oruga-next": "^0.6.0",
     "@vueuse/core": "^9.9.0",
     "esno": "0.10.0",
