@@ -87,5 +87,19 @@
     "branches": [
       "main"
     ]
-  }
+  },
+  "keywords": [
+    "form",
+    "table",
+    "datatable",
+    "automation",
+    "crud",
+    "create",
+    "read",
+    "update",
+    "delete",
+    "vue",
+    "ui framework",
+    "oruga"
+  ]
 }
